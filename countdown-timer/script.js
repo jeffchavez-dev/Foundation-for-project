@@ -1,4 +1,21 @@
 const newYears = "10 June 2023";
+const myEvent = document.getElementById("myEvent");
+const enteredEvent = document.getElementById("enteredEvent");
+const btn = document.getElementById("btn");
+const controls = document.getElementById("controls");
+// myEvent.value = newYears;
+
+
+controls.addEventListener('click', () => {
+    myEvent.classList.toggle("show");
+    btn.classList.toggle("show");
+})
+
+btn.addEventListener("click", () => {
+    enteredEvent.innerHTML = myEvent.value;
+})
+
+
 
 
 const countdown = () => {
@@ -12,7 +29,7 @@ const countdown = () => {
     const seconds = Math.floor(totalSeconds) % 60;
 
     document.getElementById("days").innerText = days;
-    document.getElementById("hours").innerText = hours;
+    document.getElementById("hours").innerText = formatTime(hours);
     document.getElementById("minutes").innerText = formatTime(minutes);
     document.getElementById("seconds").innerText = formatTime(seconds);
     console.log(days, hours, minutes, seconds)
@@ -25,6 +42,4 @@ const formatTime = (time) => {
 
 
 setInterval(countdown, 1000);
-
-
 countdown();

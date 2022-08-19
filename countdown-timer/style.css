@@ -29,7 +29,7 @@ body {
     max-width: 80%;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     margin: 1rem auto;
@@ -42,9 +42,58 @@ h1 {
 
 .timer-elements {
     text-align: center;
-    max-width: 150px;
+    width: 150px;
+    min-width: 120px;
 }
 .timer-elements span {
     color: white;
     margin: auto;
+}
+
+/* Event */
+.event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+
+}
+#controls {
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+}
+
+.show {
+    display: none;
+}
+#btn {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 5px 8px;
+    opacity: .8;
+    font-size: 1.2em;
+}
+
+#btn:hover {
+    color: black;
+    background-color: white;
+}
+h2 {
+    font-size: 3rem;
+}
+input[type="text"] {
+  	height: 30px;
+  	font-size: 1rem;
+  	border: 1px solid gray;
+    margin-bottom: .5rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+    background-color: none;
+    
 }

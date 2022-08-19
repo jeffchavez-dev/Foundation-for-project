@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+   
     <title>Countdown Timer</title>
 </head>
 <body>
-    <h1> Countdown Timer</h1>
+    <div class="event-container">
+        <h1> Countdown Timer</h1>
+        <h2 id="enteredEvent"> My Event</h2>
+        <p id="controls">&#9881;</p>
+        <input type="text" id="myEvent" placeholder="Enter Event">
+        <button id="btn">SET</button>
+    </div>
     <div class="countdown-container">
         <div class="days-container timer-elements">
             <p class="big-text" id="days">0</p>
@@ -31,5 +37,6 @@
             <span>Seconds</span>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
