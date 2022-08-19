@@ -3,7 +3,6 @@ const myEvent = document.getElementById("myEvent");
 const enteredEvent = document.getElementById("enteredEvent");
 const btn = document.getElementById("btn");
 const controls = document.getElementById("controls");
-// myEvent.value = newYears;
 
 
 controls.addEventListener('click', () => {
@@ -13,6 +12,7 @@ controls.addEventListener('click', () => {
 
 btn.addEventListener("click", () => {
     enteredEvent.innerHTML = myEvent.value;
+    myEvent.setAttribute("value","New");
 })
 
 
