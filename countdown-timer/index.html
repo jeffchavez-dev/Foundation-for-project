@@ -15,10 +15,18 @@
     <div class="event-container">
         <h1> Countdown Timer</h1>
         <h2 id="enteredEvent"> My Event</h2>
-        <p id="controls">&#9881;</p>
-        <input type="text" id="myEvent" placeholder="Enter Event">
-        <button id="btn">SET</button>
+        <div class="controls">
+            <p id="control-gear">&#9881;</p>
+            <div class="control-description">Set Event</div>
+        </div>
+        <div id="setEvent" class="setEvent">
+            <input type="text" id="myEvent" placeholder="Enter Event">
+            <button id="setEventBtn" class="btn">SET</button>
+            <input type="date" id="myEventDate" placeholder="Enter Date (format: 01 Jan 2022)">
+            <button id="setDateBtn" class="btn">SET</button>
+        </div>
     </div>
+    
     <div class="countdown-container">
         <div class="days-container timer-elements">
             <p class="big-text" id="days">0</p>
