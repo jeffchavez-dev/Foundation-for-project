@@ -34,12 +34,19 @@ const question = document.getElementById("question");
 const a_text = document.getElementById("a");
 const b_text = document.getElementById("b");
 const c_text = document.getElementById("c");
+
 let currentQuestion = 0;
 
 
-loadQuiz();
-
 
 const loadQuiz = () => {
-    question.innerHTML = quizData[currentQuestion];
+    const currentQuizData = quizData[currentQuestion];
+    question.innerText = currentQuestion.question;
+
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
 }
+
+loadQuiz();
+
