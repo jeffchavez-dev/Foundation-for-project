@@ -28,7 +28,10 @@ setDateBtn.addEventListener("click", () => {
     newYears = myEventDate.value;
 })
 
-
+myEventDate.min = '2022-08-22';
+const dateNow = new Date();
+dateNow.toISOString("yyyy-mm-dd");
+console.log(dateNow)
 
 
 
