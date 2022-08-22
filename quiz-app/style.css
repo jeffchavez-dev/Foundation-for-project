@@ -26,12 +26,17 @@ body {
 .quiz-header {
     padding: 2em;
 }
+.quiz-header h2 {
+    font-size: 2rem;
+}
 
 li {
     list-style-type: none;
     padding: .5em;
-    font-size: 1.1rem;
-    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+input {
+    margin: .5rem;
 }
 
 #btn {

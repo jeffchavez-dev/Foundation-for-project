@@ -34,7 +34,7 @@ const question = document.getElementById("question");
 const a_text = document.getElementById("a");
 const b_text = document.getElementById("b");
 const c_text = document.getElementById("c");
-let currentQueastion = 0;
+let currentQuestion = 0;
 
 
 loadQuiz();
