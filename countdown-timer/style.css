@@ -34,6 +34,11 @@ h1 {
     text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     margin: 1rem auto;
 }
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 10rem;
+}
 .big-text {
     font-size: 5rem;
     color: white;
