@@ -7,6 +7,12 @@ const setDateBtn = document.getElementById("setDateBtn");
 const setEvent = document.getElementById("setEvent");
 const control = document.getElementById("control-gear");
 
+myEvent.addEventListener('keyup',(e) => {
+    if (e.keyCode === 13) {
+    enteredEvent.innerHTML = myEvent.value;
+    myEvent.setAttribute("value","New");
+  }
+});
 
 control.addEventListener('click', () => {
     setEvent.classList.toggle("show");
@@ -21,6 +27,8 @@ let newYears = "";
 setDateBtn.addEventListener("click", () => {
     newYears = myEventDate.value;
 })
+
+
 
 
 
