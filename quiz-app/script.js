@@ -34,19 +34,29 @@ const question = document.getElementById("question");
 const a_text = document.getElementById("a");
 const b_text = document.getElementById("b");
 const c_text = document.getElementById("c");
+const submitBtn = document.getElementById("btn");
 
 let currentQuestion = 0;
 
 
-
 const loadQuiz = () => {
     const currentQuizData = quizData[currentQuestion];
-    question.innerText = currentQuestion.question;
-
+    question.innerText = currentQuizData.question;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
 }
 
-loadQuiz();
 
+
+submitBtn.addEventListener('click', () => {
+    currentQuestion++;
+
+    if(currentQuestion < quizData.length) {
+        loadQuiz();
+    } else {
+        // TODO: Show Results
+        alert("You've finished!");
+    }
+  
+})
