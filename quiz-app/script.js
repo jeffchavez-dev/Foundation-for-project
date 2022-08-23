@@ -37,7 +37,7 @@ const c_text = document.getElementById("c");
 const submitBtn = document.getElementById("btn");
 
 let currentQuestion = 0;
-
+let answer = undefined;
 
 const loadQuiz = () => {
     const currentQuizData = quizData[currentQuestion];
@@ -47,6 +47,16 @@ const loadQuiz = () => {
     c_text.innerText = currentQuizData.c;
 }
 
+
+const getSelected = () => {
+    const answerEls = document.querySelectorAll(".answer");
+
+    answerEls.forEach((answerEl) => {
+        if(answerEl.checked) {
+            answer = answerEl.id;
+        }
+    })
+}
 
 
 submitBtn.addEventListener('click', () => {
