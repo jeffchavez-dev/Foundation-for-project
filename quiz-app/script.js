@@ -66,7 +66,7 @@ submitBtn.addEventListener('click', () => {
         loadQuiz();
     } else {
         // TODO: Show Results
-        alert("You've finished!");
+        console.log("You've finished!");
     }
   
 })
