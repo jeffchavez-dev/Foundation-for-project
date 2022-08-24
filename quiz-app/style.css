@@ -17,8 +17,27 @@ body {
     margin-bottom: 1em;
     font-size: 2.5em;
 }
+#start-quiz {
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: aquamarine;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+#start-quiz:hover {
+    background-color: rgb(23, 145, 104);
+    color: white;
+}
+
+.show {
+    display: flex;
+}
 
 .quiz-container {
+    display: none;
     background-color: white;
     width: 40%;
     max-width: 40%;
@@ -62,4 +81,9 @@ input {
 
 #btn:hover {
     background-color:rgb(23, 145, 104);
+}
+
+.final-score {
+    font-size: 2em;
+    padding: 1em;
 }
