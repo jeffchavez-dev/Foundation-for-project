@@ -32,8 +32,8 @@ body {
     color: white;
 }
 
-.show {
-    display: flex;
+#quiz .show {
+    display: block;
 }
 
 .quiz-container {
