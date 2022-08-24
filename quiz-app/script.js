@@ -31,7 +31,7 @@ const quizData = [
 ];
 
 //declare variables 
-const question = document.getElementById("question");
+const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a");
 const b_text = document.getElementById("b");
 const c_text = document.getElementById("c");
@@ -40,14 +40,15 @@ const submitBtn = document.getElementById("btn");
 a_text.value = 'Okay';
 console.log(a_text);
 
-
-let currentQuestion = 0;
+// Keep track of the current question - 0 Index
+let currentQuiz = 0;
 let answer = undefined;
 
-// add loadQuiz function that will populate your UI
+// add loadQuiz function that will populate the UI
+// this will be called everytime we click submit
 const loadQuiz = () => {
-    const currentQuizData = quizData[currentQuestion];
-    question.innerText = currentQuizData.question;
+    const currentQuizData = quizData[currentQuiz];
+    questionEl.innerText = currentQuizData.question;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
@@ -66,9 +67,9 @@ const getSelected = () => {
 
 
 submitBtn.addEventListener('click', () => {
-    currentQuestion++;
+    currentQuiz++;
 
-    if(currentQuestion < quizData.length) {
+    if(currentQuiz < quizData.length) {
         loadQuiz();
     } else {
         // TODO: Show Results
