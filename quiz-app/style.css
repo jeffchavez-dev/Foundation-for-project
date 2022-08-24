@@ -31,10 +31,10 @@ body {
     background-color: rgb(23, 145, 104);
     color: white;
 }
-
-#quiz .show {
-    display: block;
+.hide {
+    display: none;
 }
+
 
 .quiz-container {
     display: none;
@@ -46,6 +46,10 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+.show {
+    display: block;
+}
+
 
 .quiz-header {
     padding: 2em;

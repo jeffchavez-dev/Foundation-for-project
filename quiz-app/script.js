@@ -43,6 +43,7 @@ const answerEls = document.querySelectorAll(".answer");
 
 startQuiz.addEventListener('click', () => {
     quiz.classList.add('show');
+    startQuiz.classList.add('hide');
     console.log('You clicked me')
 })
 
