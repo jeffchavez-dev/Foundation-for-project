@@ -39,6 +39,11 @@ ul li {
     list-style-type: none;
     padding: .5em;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul li input {
+    cursor: pointer;
 }
 input {
     margin: .5rem;
