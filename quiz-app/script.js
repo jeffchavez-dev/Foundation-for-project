@@ -8,7 +8,7 @@ const quizData = [
     
     }, 
     {
-        question: 'It is referred to as the greatest mystery of the Christian faith',
+        question: 'It is referred to as the greatest mystery of the Christian faith.',
         a:'Incarnation',
         b: 'Resurrection',
         c: 'Cross',
@@ -22,7 +22,7 @@ const quizData = [
         corect: 'c'
     },
     {
-        question: 'It is the power of God unto salvation for those who believe',
+        question: 'It is the power of God unto salvation for those who believe.',
         a:'Christ',
         b: 'Gospel',
         c: 'Grace',
@@ -30,15 +30,21 @@ const quizData = [
     }
 ];
 
+//declare variables 
 const question = document.getElementById("question");
 const a_text = document.getElementById("a");
 const b_text = document.getElementById("b");
 const c_text = document.getElementById("c");
 const submitBtn = document.getElementById("btn");
 
+a_text.value = 'Okay';
+console.log(a_text);
+
+
 let currentQuestion = 0;
 let answer = undefined;
 
+// add loadQuiz function that will populate your UI
 const loadQuiz = () => {
     const currentQuizData = quizData[currentQuestion];
     question.innerText = currentQuizData.question;
