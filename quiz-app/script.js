@@ -43,7 +43,7 @@ const answerEls = document.querySelectorAll(".answer");
 
 startQuiz.addEventListener('click', () => {
     quiz.classList.add('show');
-    console.log('Clicked')
+    console.log('You clicked me')
 })
 
 // Keep track of the current question - 0 Index
