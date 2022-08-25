@@ -33,6 +33,7 @@ const quizData = [
 //declare variables 
 const questionEl = document.getElementById("question");
 const startQuiz = document.getElementById("start-quiz");
+const restartQuiz = document.getElementById("restart-quiz");
 const quiz = document.getElementById("quiz");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
@@ -44,6 +45,7 @@ const answerEls = document.querySelectorAll(".answer");
 startQuiz.addEventListener('click', () => {
     quiz.classList.add('show');
     startQuiz.classList.add('hide');
+    restartQuiz.classList.add('show');
     console.log('You clicked me')
 })
 
@@ -105,6 +107,8 @@ submitBtn.addEventListener('click', () => {
         } else {
             // TODO: Show Results
             quiz.innerHTML = `<h2 class="final-score">You answered correctly at ${score}/${quizData.length}`;
+            restartQuiz.classList.add('show');
+            console.log('restart')
         }
     }
    
