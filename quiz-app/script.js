@@ -1,19 +1,19 @@
 const quizData = [
-    // {
-    //     question: 'It is the righteousness of Christ legally imputed on sinners by faith.',
-    //     a:'Sanctification',
-    //     b: 'Justification',
-    //     c: 'Faith',
-    //     correct: 'b'
+    {
+        question: 'It is the righteousness of Christ legally imputed on sinners by faith.',
+        a:'Sanctification',
+        b: 'Justification',
+        c: 'Faith',
+        correct: 'b'
     
-    // }, 
-    // {
-    //     question: 'It is referred to as the greatest mystery of the Christian faith.',
-    //     a:'Incarnation',
-    //     b: 'Resurrection',
-    //     c: 'Cross',
-    //     correct: 'a'
-    // },
+    }, 
+    {
+        question: 'It is referred to as the greatest mystery of the Christian faith.',
+        a:'Incarnation',
+        b: 'Resurrection',
+        c: 'Cross',
+        correct: 'a'
+    },
     {
         question: 'Who is the author of the Epistle to Hebrews',
         a:'Apollos',
@@ -117,6 +117,5 @@ submitBtn.addEventListener('click', () => {
 
 
 restartQuiz.addEventListener('click', () => {
-    
-    loadQuiz();
+    location.reload()
 })
