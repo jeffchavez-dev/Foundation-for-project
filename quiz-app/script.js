@@ -40,6 +40,8 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const submitBtn = document.getElementById("btn");
 const answerEls = document.querySelectorAll(".answer");
+const noAnswer = document.querySelector(".no-answer-selected");
+
 
 
 // ShuffleQuiz 
@@ -75,7 +77,6 @@ const loadQuiz = () => {
 loadQuiz();
 // check if an answer is selected 
 // when submit is clicked, the selection must be deselected
-// 
 
 
 const getSelected = () => {
@@ -85,6 +86,12 @@ const getSelected = () => {
     answerEls.forEach((answerEl) => {
         if(answerEl.checked) {
             answer = answerEl.id;
+        } else {
+           noAnswer.classList.add("choose-answer");
+           setTimeout(() => {
+            noAnswer.classList.remove("choose-answer")
+           }, 2000);
+           setTimeout() 
         }
     });
 
