@@ -27,14 +27,24 @@ body {
 
 }
 
-#restart-quiz {
+.restart-quiz {
     display: none;
     cursor: pointer;
     font-size: 1.5em;
     background-color: aquamarine;
     border: none;
     padding: 1em;
+    margin-top: 1em;
     border-radius: 10px;
+}
+
+.restart-quiz:hover {
+    background-color: rgb(23, 145, 104);
+    color: white;
+}
+
+.retake {
+    display: block;
 }
 
 #start-quiz:hover {

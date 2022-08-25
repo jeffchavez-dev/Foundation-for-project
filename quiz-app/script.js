@@ -1,19 +1,19 @@
 const quizData = [
-    {
-        question: 'It is the righteousness of Christ legally imputed on sinners by faith.',
-        a:'Sanctification',
-        b: 'Justification',
-        c: 'Faith',
-        correct: 'b'
+    // {
+    //     question: 'It is the righteousness of Christ legally imputed on sinners by faith.',
+    //     a:'Sanctification',
+    //     b: 'Justification',
+    //     c: 'Faith',
+    //     correct: 'b'
     
-    }, 
-    {
-        question: 'It is referred to as the greatest mystery of the Christian faith.',
-        a:'Incarnation',
-        b: 'Resurrection',
-        c: 'Cross',
-        correct: 'a'
-    },
+    // }, 
+    // {
+    //     question: 'It is referred to as the greatest mystery of the Christian faith.',
+    //     a:'Incarnation',
+    //     b: 'Resurrection',
+    //     c: 'Cross',
+    //     correct: 'a'
+    // },
     {
         question: 'Who is the author of the Epistle to Hebrews',
         a:'Apollos',
@@ -45,9 +45,8 @@ const answerEls = document.querySelectorAll(".answer");
 startQuiz.addEventListener('click', () => {
     quiz.classList.add('show');
     startQuiz.classList.add('hide');
-    restartQuiz.classList.add('show');
-    console.log('You clicked me')
 })
+
 
 // Keep track of the current question - 0 Index
 let currentQuiz = 0;
@@ -70,6 +69,8 @@ loadQuiz();
 // check if an answer is selected 
 // when submit is clicked, the selection must be deselected
 // 
+
+
 const getSelected = () => {
 
     let answer = undefined;
@@ -107,10 +108,15 @@ submitBtn.addEventListener('click', () => {
         } else {
             // TODO: Show Results
             quiz.innerHTML = `<h2 class="final-score">You answered correctly at ${score}/${quizData.length}`;
-            restartQuiz.classList.add('show');
-            console.log('restart')
+            restartQuiz.classList.add('retake');
         }
     }
    
   
+})
+
+
+restartQuiz.addEventListener('click', () => {
+    
+    loadQuiz();
 })
