@@ -42,6 +42,13 @@ const submitBtn = document.getElementById("btn");
 const answerEls = document.querySelectorAll(".answer");
 
 
+// ShuffleQuiz 
+const shuffleQuiz = (arr) => {
+    arr.sort(() => Math.random() - 0.5);
+}
+
+shuffleQuiz(quizData);
+
 startQuiz.addEventListener('click', () => {
     quiz.classList.add('show');
     startQuiz.classList.add('hide');
