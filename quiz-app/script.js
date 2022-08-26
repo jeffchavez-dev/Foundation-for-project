@@ -86,13 +86,7 @@ const getSelected = () => {
     answerEls.forEach((answerEl) => {
         if(answerEl.checked) {
             answer = answerEl.id;
-        } else {
-           noAnswer.classList.add("choose-answer");
-           setTimeout(() => {
-            noAnswer.classList.remove("choose-answer")
-           }, 2000);
-           setTimeout() 
-        }
+        } 
     });
 
     return answer;
