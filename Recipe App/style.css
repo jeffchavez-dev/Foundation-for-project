@@ -64,6 +64,10 @@ ul li {
     border-radius: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
+.fav-img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+}
 
 .meals {
     padding: 1em;
@@ -73,4 +77,8 @@ ul li {
 .meal-body ul li img {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.meal-body ul li img:hover {
+    transform: translateY(5px, 5px)
 }
