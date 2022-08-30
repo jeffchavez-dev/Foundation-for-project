@@ -38,6 +38,7 @@ header {
 
 ul li {
     list-style-type: none;
+    padding: 1em;
 }
 
 .fav-container {
@@ -46,14 +47,30 @@ ul li {
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin: 1em auto;
+    margin: auto;
 }
 
 .fav-container > ul {
     display: flex; 
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.fav-container ul li {
+    width: 100%;
+    padding: .3rem;
+    margin: 0;
+
+}
+.fav-img {
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
-.fav-container > img {
-    border-radius: 100%;
+.meals {
+    padding: 1em;
+    border: solid 1px rgba(0,0,0,0.5);
+}
+
+.meal-body ul li img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
