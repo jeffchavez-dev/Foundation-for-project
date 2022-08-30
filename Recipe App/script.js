@@ -3,7 +3,9 @@
 
 const searchBtn = document.getElementById("search");
 const searchInput = document.getElementById("search-input");
+const header = document.querySelector(".header-title");
 
 searchBtn.addEventListener('click', () => {
-    searchInput.innerText = searchInput.value;
+    header.innerText = searchInput.value.toUpperCase();
+    console.log('clicked')
 })
