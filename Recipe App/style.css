@@ -35,7 +35,20 @@ img {
 header {
     padding: 1em;
 }
+input[type="text"] {
+    padding: .5em
+}
 
+#search {
+    cursor: pointer;
+    padding: .5em .8em;
+    border: 1px solid aqua;
+    background-color: aqua;
+}
+
+#search:hover {
+    background-color: aquamarine;
+}
 ul li {
     list-style-type: none;
     padding: 1em;
@@ -69,6 +82,7 @@ ul li {
     transition: ease-in-out .3s;
 }
 
+/*Meals */
 .meals {
     padding: 1em;
     border: solid 1px rgba(0,0,0,0.5);
