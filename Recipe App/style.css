@@ -29,4 +29,31 @@ img {
 .mobile-container {
     background-color: white;
     width: 400px;
+    padding: 1em;
+}
+
+header {
+    padding: 1em;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.fav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.fav-container > ul {
+    display: flex; 
+    justify-content: center;
+}
+
+.fav-container > img {
+    border-radius: 100%;
 }
