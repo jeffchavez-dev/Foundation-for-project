@@ -103,3 +103,8 @@ ul li {
 .meal-body ul li img:hover {
     transform: translateY(5px, 5px)
 }
+
+.random {
+    font-size: 1.5em;
+    font-weight: bold;
+}
