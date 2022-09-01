@@ -59,8 +59,8 @@ ul li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80%;
-    margin: auto;
+    background-color: aquamarine;
+    width: 100%;
 }
 
 .fav-container > ul {
@@ -72,6 +72,10 @@ ul li {
     padding: .3rem;
     margin: 0;
 
+}
+
+.fav-meals li span {
+    font-size: .8em;
 }
 .fav-img {
     border-radius: 100%;
