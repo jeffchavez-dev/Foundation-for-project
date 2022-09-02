@@ -10,3 +10,16 @@ searchBtn.addEventListener('click', () => {
     header.innerText = searchInput.value.toUpperCase();
     console.log('clicked')
 })
+
+
+const getRandomeal = () => {
+
+}
+
+const getMealById = (id) => {
+
+}
+
+const getMealsBySearch = (term) => {
+    
+}
