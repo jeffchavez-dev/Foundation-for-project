@@ -13,13 +13,16 @@ searchBtn.addEventListener('click', () => {
 
 
 async function getRandomeal() {
-    fetch('https://www.themealdb.com/api/json/v1/1/random.php')
+    const resp = await fetch('https://www.themealdb.com/api/json/v1/1/random.php'
+    ).data();
+    const randomMeal = await resp.json();
+    console.log(randomMeal)
 }
 
 async function getMealById(id) {
-    fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i='+id)
+    const meal = await fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i='+id)
 }
 
 async function getMealsBySearch(term) {
-    fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?s=' + term);
+    const meals = await fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?s=' + term);
 }
