@@ -25,15 +25,18 @@ async function getRandomeal() {
     addMeal(randomMeal, true);
 }
 
+
 async function getMealById(id) {
     const meal = await fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i='+id)
 }
+
 
 async function getMealsBySearch(term) {
     const meals = await fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?s=' + term);
 }
 
-addMeal(mealData, random = false){
+
+function addMeal(mealData, random = false){
     const meal = document.createElement('div');
     meal.classList.add('meal');
 
@@ -51,4 +54,6 @@ addMeal(mealData, random = false){
             <button id="btn"><i class="fa-regular fa-heart"></i></button>
         </div>
     </div>`
+    ;
+    meals.appendChild(meal)
 };
