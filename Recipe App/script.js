@@ -12,14 +12,14 @@ searchBtn.addEventListener('click', () => {
 })
 
 
-const getRandomeal = () => {
-
+async function getRandomeal() {
+    fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 }
 
-const getMealById = (id) => {
-
+async function getMealById(id) {
+    fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i='+id)
 }
 
-const getMealsBySearch = (term) => {
-    
+async function getMealsBySearch(term) {
+    fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?s=' + term);
 }
