@@ -47,13 +47,8 @@ addMeal(mealData, random = false){
             src="${mealData.strlMealThumb}" 
             alt="${mealData.Meal}"
         <div class="meal-body">
-            <h4>Veggie Veggies</h4>
+            <h4>${mealData.Meal}</h4>
             <button id="btn"><i class="fa-regular fa-heart"></i></button>
-            <ul>
-                <li><img src="https://www.themealdb.com//images//media//meals//wxywrq1468235067.jpg" alt=""><span>PIE</span></li>
-                <li><img src="https://www.themealdb.com//images//media//meals//xvsurr1511719182.jpg" alt=""><span>CEREAL MEAL</span></li>
-                <li><img src="https://www.themealdb.com//images//media//meals//wvpsxx1468256321.jpg" alt=""><span>RICE MEAL</span></li>
-            </ul>
         </div>
     </div>`
 };
