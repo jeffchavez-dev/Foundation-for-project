@@ -37,11 +37,15 @@ addMeal(mealData, random = false){
     const meal = document.createElement('div');
     meal.classList.add('meal');
 
-    meal.innerHTML =  `<span class="random">Random Recipe</span>
+    meal.innerHTML =  `
+    
+   
     <div class="meal">
         <div class="meal-header">
-            <img src="" alt="">
-        </div>
+        ${random ? ` <span class="random">Random Recipe</span>` : ''}
+            <img 
+            src="${mealData.strlMealThumb}" 
+            alt="${mealData.Meal}"
         <div class="meal-body">
             <h4>Veggie Veggies</h4>
             <button id="btn"><i class="fa-regular fa-heart"></i></button>
