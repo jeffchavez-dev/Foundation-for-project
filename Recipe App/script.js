@@ -11,13 +11,15 @@ searchBtn.addEventListener('click', () => {
     console.log('clicked')
 })
 
+
+getRandomeal()
 // async keyword is used along with function declaration
 async function getRandomeal() {
     const resp = await fetch( // await is used inside async function
         'https://www.themealdb.com/api/json/v1/1/random.php'
-    ).data();
+    );
     const randomMeal = await resp.json();
-    console.log(randomMeal)
+    console.log(randomMeal.meals[0])
 }
 
 async function getMealById(id) {
