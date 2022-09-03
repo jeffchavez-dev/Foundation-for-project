@@ -23,6 +23,7 @@ async function getRandomeal() {
     const randomMeal = respData.meals[0];
    
     addMeal(randomMeal, true);
+
 }
 
 
