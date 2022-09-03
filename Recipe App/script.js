@@ -23,7 +23,7 @@ async function getRandomeal() {
     const randomMeal = respData.meals[0];
    
     addMeal(randomMeal, true);
-
+    console.log(randomMeal)
 }
 
 
@@ -49,9 +49,9 @@ function addMeal(mealData, random = false){
         ${random ? ` <span class="random">Random Recipe</span>` : ''}
             <img 
             src="${mealData.strlMealThumb}" 
-            alt="${mealData.Meal}"
+            alt="${mealData.strMeal}"
         <div class="meal-body">
-            <h4>${mealData.Meal}</h4>
+            <h4>${mealData.strMeal}</h4>
             <button id="btn"><i class="fa-regular fa-heart"></i></button>
         </div>
     </div>`
