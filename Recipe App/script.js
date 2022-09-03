@@ -23,15 +23,18 @@ async function getRandomeal() {
     if(resp.status !==404) {
         const noMeal = document.createElement('div');
         noMeal.classList.add('meal');
-        noMeal.innerHTML = `<h2>No meal available today</h2>`
+        noMeal.innerHTML = 
+        `<h2>No meal available today. <br> 
+       
+        <br> Error:  ${resp.status}</h2>`
         meals.appendChild(noMeal)
-        console.log("You've got an error")
+        console.log(resp.status)
+       
     } else {
         const respData = await resp.json();
         const randomMeal = respData.meals[0];
         addMeal(randomMeal, true);
         console.log(randomMeal)
-        
     }
    
     
