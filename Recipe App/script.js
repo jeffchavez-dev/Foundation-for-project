@@ -19,11 +19,22 @@ async function getRandomeal() {
     const resp = await fetch( // await is used inside async function
         'https://www.themealdb.com/api/json/v1/1/random.php'
     );
-    const respData = await resp.json();
-    const randomMeal = respData.meals[0];
+
+    if(resp.status !==404) {
+        const noMeal = document.createElement('div');
+        noMeal.classList.add('meal');
+        noMeal.innerHTML = `<h2>No meal available today</h2>`
+        meals.appendChild(noMeal)
+        console.log("You've got an error")
+    } else {
+        const respData = await resp.json();
+        const randomMeal = respData.meals[0];
+        addMeal(randomMeal, true);
+        console.log(randomMeal)
+        
+    }
    
-    addMeal(randomMeal, true);
-    console.log(randomMeal)
+    
 }
 
 
