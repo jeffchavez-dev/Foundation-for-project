@@ -29,6 +29,10 @@ async function getRandomeal() {
         <br> Error:  ${resp.status}</h2>`
         meals.appendChild(noMeal)
         console.log(resp.status)
+        const respData = await resp.json();
+        const randomMeal = respData.meals[0];
+        addMeal(randomMeal, true);
+        console.log(randomMeal)
        
     } else {
         const respData = await resp.json();
