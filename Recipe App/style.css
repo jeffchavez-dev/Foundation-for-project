@@ -98,8 +98,10 @@ ul li {
 .meal {
   padding: 1em;
 }
-
-.meal-body ul li {
+.meal-body {
+  position: relative;
+}
+.meal-body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -119,4 +121,9 @@ ul li {
 .random {
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.fa-heart {
+  cursor: pointer;
+  color: red;
 }
