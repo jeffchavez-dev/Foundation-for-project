@@ -70,7 +70,7 @@ function addMeal(mealData, random = false){
             alt="${mealData.strMeal}"
         <div class="meal-body">
             <h4>${mealData.strMeal}</h4>
-            <button id="btn"><i class="fa-regular fa-heart"></i></button>
+            <button id="btn"><i class="fa fa-heart"></i></button>
         </div>
     </div>`
     ;
