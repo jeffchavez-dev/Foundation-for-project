@@ -20,21 +20,26 @@ async function getRandomeal() {
         'https://www.themealdb.com/api/json/v1/1/random.php'
     );
 
-    if(resp.status !==404) {
-        const noMeal = document.createElement('div');
-        noMeal.classList.add('meal');
-        noMeal.innerHTML = 
-        `<h2>No meal available today. <br> 
-       
-        <br> Error:  ${resp.status}</h2>`
-        meals.appendChild(noMeal)
-        console.log(resp.status)       
-    } else {
-        const respData = await resp.json();
+    const respData = await resp.json();
         const randomMeal = respData.meals[0];
         addMeal(randomMeal, true);
         console.log(randomMeal)
-    }
+
+    // if(resp.status !==404) {
+    //     const noMeal = document.createElement('div');
+    //     noMeal.classList.add('meal');
+    //     noMeal.innerHTML = 
+    //     `<h2>No meal available today. <br> 
+       
+    //     <br> Error:  ${resp.status}</h2>`
+    //     meals.appendChild(noMeal)
+    //     console.log(resp.status)       
+    // } else {
+    //     const respData = await resp.json();
+    //     const randomMeal = respData.meals[0];
+    //     addMeal(randomMeal, true);
+    //     console.log(randomMeal)
+    // }
    
     
 }
@@ -62,12 +67,14 @@ function addMeal(mealData, random = false){
         ${random ? ` <span class="random">Random Recipe</span>` : ''}
             <img 
             src="${mealData.strlMealThumb}" 
-            alt="${mealData.strMeal}"
+            alt="${mealData.strMeal}" >
+        </div>
         <div class="meal-body">
             <h4>${mealData.strMeal}</h4>
             <button id="btn"><i class="fa fa-heart"></i></button>
         </div>
     </div>`
     ;
+    // add the created element to meal element
     meals.appendChild(meal)
 };
