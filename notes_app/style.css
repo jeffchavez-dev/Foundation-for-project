@@ -15,10 +15,13 @@ body {
     height: 50vh;
     width: 500px;
     max-width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     border-radius: 10px;
+}
+
+.note-header {
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
 }
