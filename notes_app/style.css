@@ -24,6 +24,10 @@ body {
     background-color: aqua;
     height: 50px;
     width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .note-main {
