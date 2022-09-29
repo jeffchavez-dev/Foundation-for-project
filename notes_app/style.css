@@ -26,10 +26,15 @@ body {
     width: 100%;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+
+i {
+    cursor: pointer;
+    padding: 5px;
+}
 .note-main {
     height: 60%;
     padding: 2em;
