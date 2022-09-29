@@ -25,3 +25,15 @@ body {
     height: 50px;
     width: 100%;
 }
+
+.note-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save {
+    background-color: aquamarine;
+    border: none;
+    cursor: pointer;
+}
