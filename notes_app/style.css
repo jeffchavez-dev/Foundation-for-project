@@ -12,7 +12,7 @@ body {
     background-color: aquamarine;
 }
 .container {
-    height: 50vh;
+    overflow: hidden;
     width: 500px;
     max-width: 90%;
     background-color: white;
@@ -36,7 +36,7 @@ i {
     padding: 5px;
 }
 .note-main {
-    height: 60%;
+    height: 70%;
     padding: 2em;
     font-size: 1.5em;
 }
@@ -44,6 +44,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: blanchedalmond;
     
 }
 
