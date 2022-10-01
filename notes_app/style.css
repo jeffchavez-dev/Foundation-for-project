@@ -36,7 +36,7 @@ i {
     padding: 5px;
 }
 .note-main {
-    height: 70%;
+    height: 30vh;
     padding: 2em;
     font-size: 1.5em;
 }
@@ -45,6 +45,7 @@ i {
     justify-content: center;
     align-items: center;
     background-color: blanchedalmond;
+    padding: 1em;
     
 }
 
