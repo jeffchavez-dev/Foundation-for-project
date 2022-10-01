@@ -39,6 +39,12 @@ i {
     height: 30vh;
     padding: 2em;
     font-size: 1.5em;
+    text-align: center;
+}
+
+.note-main li {
+    list-style-type: none;
+    margin: auto;
 }
 .note-btn {
     display: flex;
