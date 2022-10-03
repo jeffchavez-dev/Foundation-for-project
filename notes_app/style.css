@@ -41,6 +41,14 @@ i {
     padding: 5px;
 }
 
+.main {
+    height: 30vh;
+    width: 100%;
+    padding: 2em;
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+}
 
 textarea {
     height: 30vh;
@@ -48,9 +56,10 @@ textarea {
     padding: 2em;
     font-size: 1.5em;
     text-align: center;
-    margin: auto;
-
 }
 
+.notes .hidden {
+    display: none;
+}
 
 
