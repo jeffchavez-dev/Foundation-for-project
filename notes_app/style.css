@@ -18,6 +18,10 @@ body {
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .note-header {
@@ -42,11 +46,15 @@ i, .close, .setting {
     padding: 5px;
 }
 
-.main {
+
+textarea {
     height: 30vh;
+    width: 100%;
     padding: 2em;
     font-size: 1.5em;
     text-align: center;
+    margin: auto;
+
 }
 
 
