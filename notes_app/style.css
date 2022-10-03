@@ -42,7 +42,7 @@ i, .close, .setting {
     padding: 5px;
 }
 
-.note-main {
+.note-text-area {
     height: 30vh;
     padding: 2em;
     font-size: 1.5em;
