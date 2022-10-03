@@ -32,7 +32,7 @@ body {
     color: white;
 }
 
-.controls {
+.tools {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,33 +42,12 @@ i, .close, .setting {
     padding: 5px;
 }
 
-.note-text-area {
+.main {
     height: 30vh;
     padding: 2em;
     font-size: 1.5em;
     text-align: center;
 }
 
-.note-main li {
-    list-style-type: none;
-    margin: auto;
-}
-.note-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    
-}
-
-.save {
-    background-color: aquamarine;
-    border: none;
-    cursor: pointer;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    font-size: 1.5em;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
-}
 
 
