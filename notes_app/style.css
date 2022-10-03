@@ -11,7 +11,7 @@ body {
     align-items: center;
     background-color: aquamarine;
 }
-.container {
+.notes {
     overflow: hidden;
     width: 500px;
     max-width: 90%;
@@ -24,24 +24,19 @@ body {
     align-items: center;
 }
 
-.note-header {
+.tools{
     background-color: aqua;
     height: 50px;
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-size: 1.2rem;
     color: white;
 }
 
-.tools {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-i, .close, .setting {
+i {
     cursor: pointer;
     padding: 5px;
 }
