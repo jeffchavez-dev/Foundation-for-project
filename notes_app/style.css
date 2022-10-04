@@ -48,6 +48,7 @@ body {
     height: 100%;
     width: 100%;
     font-size: 1.5em;
+    padding: 1rem;
 }
 
 .notes textarea {
@@ -55,6 +56,7 @@ body {
     width: 100%;
     outline: none;
     border: none;
+    padding: 1rem;
 }
 
 .notes .hidden {
