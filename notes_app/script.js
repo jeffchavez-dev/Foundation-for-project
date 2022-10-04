@@ -1,8 +1,8 @@
 const editBtn = document.querySelector('.edit')
 const deleteBtn = document.querySelector('.delete')
 const notesEl = document.querySelector('.notes')
-const main = document.querySelector('.main')
-const textArea = document.querySelector('textarea')
+const main = notesEl.querySelector('.main')
+const textArea = notesEl.querySelector('textarea')
 
 editBtn.addEventListener('click', () => {
     main.classList.toggle('hidden')
@@ -10,6 +10,8 @@ editBtn.addEventListener('click', () => {
 })
 
 textArea.addEventListener('input', (e) => {
-    const { value } = e.target;
-    main.innerHTML = marked(value)
+    const value = e.target.value;
+    console.log(value);
+    main.innerHTML = value;
+
 })
