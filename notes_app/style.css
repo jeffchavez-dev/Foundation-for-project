@@ -27,7 +27,7 @@ body {
 
 }
 
-.tools{
+.notes .tools{
     background-color: aqua;
     height: 50px;
     width: 100%;
@@ -39,7 +39,7 @@ body {
     color: white;
 }
 
-i {
+.notes i {
     cursor: pointer;
     padding: 5px;
 }
