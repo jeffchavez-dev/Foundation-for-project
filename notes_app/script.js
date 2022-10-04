@@ -10,8 +10,8 @@ editBtn.addEventListener('click', () => {
 })
 
 textArea.addEventListener('input', (e) => {
-    const value = e.target.value;
+    const { value } = e.target;
     console.log(value);
-    main.innerHTML = value;
+    main.innerHTML = marked(value);
 
 })
