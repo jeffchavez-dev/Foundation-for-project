@@ -31,6 +31,10 @@ function adddNewNote(){
     const main = notesEl.querySelector('.main')
     const textArea = notesEl.querySelector('textarea')
 
+
+    deleteBtn.addEventListener('click', () => {
+        note.remove()
+    })
     editBtn.addEventListener('click', () => {
         main.classList.toggle('hidden')
         textArea.classList.toggle('hidden')
