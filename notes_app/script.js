@@ -14,3 +14,15 @@ textArea.addEventListener('input', (e) => {
     main.innerHTML = marked(value);
 
 })
+
+
+// <div class="notes">
+// <div class="tools">
+//     <i class="fa-solid fa-pen-to-square edit"></i>
+//     <i class="fa-solid fa-trash-can delete"></i>
+//     <i class="fa-sharp fa-solid fa-xmark"></i>
+// </div>
+// <div class="main hidden"></div>
+// <textarea placeholder="Type your notes here"></textarea>
+
+// </div>
