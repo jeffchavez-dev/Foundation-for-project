@@ -12,7 +12,7 @@ function adddNewNote(){
     document.body.appendChild(note);
 
     note.innerHTML = `
-        <div class="notes">
+        
             <div class="tools">
                 <i class="fa-solid fa-pen-to-square edit"></i>
                 <i class="fa-solid fa-trash-can delete"></i>
@@ -21,7 +21,7 @@ function adddNewNote(){
             <div class="main hidden"></div>
             <textarea placeholder="Type your notes here"></textarea>
 
-        </div>
+    
     `
     const editBtn = note.querySelector('.edit')
     const deleteBtn = note.querySelector('.delete')
