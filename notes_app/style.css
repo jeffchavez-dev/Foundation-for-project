@@ -9,6 +9,7 @@ body {
     background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .add {
@@ -38,7 +39,6 @@ body {
     background-color: blue;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     border-radius: 10px;
-    margin: 1em;
 }
 
 .notes .tools{
