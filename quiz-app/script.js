@@ -44,6 +44,19 @@ const noAnswer = document.querySelector(".no-answer-selected");
 
 
 
+function quizTimer() {
+    let time = 5;
+    const interval = setInterval(timer, 1000)
+    function timer(){
+        if(time === 0) {
+        // alert('times up!')
+        clearInterval(interval)
+        } else {
+            // console.log(time--)
+        }
+    }
+}
+
 // ShuffleQuiz 
 const shuffleQuiz = (arr) => {
     arr.sort(() => Math.random() - 0.5);
