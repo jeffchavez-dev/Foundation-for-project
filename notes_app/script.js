@@ -10,7 +10,7 @@ editBtn.addEventListener('click', () => {
 })
 
 textArea.addEventListener('input', (e) => {
-    const { value } = e.target;
+    const value = e.target.value; // destructuring syntax = const { value } = e.target;
     main.innerHTML = marked(value);
 
 })
