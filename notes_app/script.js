@@ -25,9 +25,8 @@ function adddNewNote(){
     `
     const editBtn = note.querySelector('.edit')
     const deleteBtn = note.querySelector('.delete')
-    const notesEl = note.querySelector('.notes')
-    const main = notesEl.querySelector('.main')
-    const textArea = notesEl.querySelector('textarea')
+    const main = note.querySelector('.main')
+    const textArea = note.querySelector('textarea')
 
 
     deleteBtn.addEventListener('click', () => {
