@@ -9,7 +9,7 @@ addBtn.addEventListener('click',()=> {
 function adddNewNote(){
     const note = document.createElement('div');
     note.classList.add('notes');
-    document.body.appendChild(note);
+    
 
     note.innerHTML = `
         
@@ -20,8 +20,6 @@ function adddNewNote(){
             </div>
             <div class="main hidden"></div>
             <textarea placeholder="Type your notes here"></textarea>
-
-    
     `
     const editBtn = note.querySelector('.edit')
     const deleteBtn = note.querySelector('.delete')
@@ -42,6 +40,7 @@ function adddNewNote(){
         main.innerHTML = marked(value);
 
 })
+    document.body.appendChild(note);
 
 }
 
