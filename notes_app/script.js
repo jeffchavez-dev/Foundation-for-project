@@ -40,9 +40,22 @@ function adddNewNote(){
         const value = e.target.value; // destructuring syntax = const { value } = e.target;
         main.innerHTML = marked(value);
 
+        updateLS()
+
 })
     document.body.appendChild(note);
 
+}
+
+function updateLS() {
+    const notesText = document.querySelectorAll('textarea');
+
+    const notes = [];
+    notesText.forEach(note => {
+        notes.push(note.value);
+    })
+
+    localStorage.setItem('notes', JSON.stringify)
 }
 
 
