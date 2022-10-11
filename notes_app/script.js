@@ -21,7 +21,7 @@ function adddNewNote(){
                 <div class="main hidden"></div>
                 <textarea placeholder="Type your notes here"></textarea>
             </div>
-    `
+    `;
     const editBtn = note.querySelector('.edit')
     const deleteBtn = note.querySelector('.delete')
     const main = note.querySelector('.main')
