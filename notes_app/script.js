@@ -66,4 +66,4 @@ function updateLS() {
     localStorage.setItem('notes', JSON.stringify(notes))
 }
 
-
+// https://youtu.be/dtKciwk_si4?t=14284
